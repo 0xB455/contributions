@@ -5,34 +5,34 @@
 
   # define contributions info
   define("EPOCH",   strtotime("2022-05-22 00:00:00"));
-  define("PATTERN", [0,0,1,0,0,0,1,
+  define("PATTERN", [0,0,0,0,0,0,0,
+                     0,0,0,0,0,1,0,
                      0,0,0,1,0,1,0,
-                     0,0,0,0,1,0,0,
-                     0,0,0,1,0,0,0,
-                     0,0,1,0,0,0,0,
-                     0,0,0,0,1,0,0,
-                     0,0,0,1,1,0,0,
-                     0,0,1,0,1,0,0,
-                     0,0,0,1,1,0,0,
-                     0,0,0,0,1,0,0,
+                     0,0,0,0,1,1,0,
                      0,0,0,0,0,0,0,
-                     0,0,0,0,1,0,0,
-                     0,0,0,1,0,0,0,
-                     0,0,1,0,0,0,0,
-                     0,1,0,1,0,0,0,
-                     1,0,0,0,1,0,0,
-                     0,0,1,0,0,0,0,
-                     0,0,1,1,0,0,0,
-                     0,0,1,0,1,0,0,
-                     0,0,1,1,1,0,0,
-                     0,0,1,0,1,0,0,
-                     0,0,0,0,1,0,0,
-                     0,0,0,0,1,0,0]);
+                     0,0,0,0,0,0,0,
+                     0,0,0,0,0,0,0,
+                     0,1,1,1,1,1,0,
+                     0,0,0,0,0,0,0,
+                     0,1,0,1,0,1,0,
+                     0,1,0,1,0,1,0,
+                     0,1,1,1,1,1,0,
+                     0,0,0,0,0,0,0,
+                     0,1,0,1,0,1,0,
+                     0,1,0,1,0,1,0,
+                     0,1,1,1,1,1,0,
+                     0,0,0,0,0,0,0,
+                     0,1,0,0,0,0,0,
+                     0,1,0,0,0,0,0,
+                     0,1,1,1,1,1,0,
+                     0,0,0,0,0,0,0,
+                     0,0,0,0,0,0,0,
+                     0,0,0,0,0,0,0]);
 
   # define git configuration
-  define("GIT_COMMIT",  "git '--git-dir=/home/contributions/github/yahe-contributions/.git/' '--work-tree=/home/contributions/github/yahe-contributions/' commit -a -m 'create contribution'");
-  define("GIT_PUSH",    "git '--git-dir=/home/contributions/github/yahe-contributions/.git/' '--work-tree=/home/contributions/github/yahe-contributions/' push origin master");
-  define("TARGET_FILE", "/home/contributions/github/yahe-contributions/data/data");
+  define("GIT_COMMIT",  "git '--git-dir=/home/contributions/github/contributions/.git/' '--work-tree=/home/contributions/github/contributions/' commit -a -m 'create contribution'");
+  define("GIT_PUSH",    "git '--git-dir=/home/contributions/github/contributions/.git/' '--work-tree=/home/contributions/github/contributions/' push origin master");
+  define("TARGET_FILE", "/home/contributions/github/contributions/data/data");
 
   # define system configuration
   define("STREAM_BUFFER", 1024);
